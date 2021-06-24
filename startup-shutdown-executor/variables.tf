@@ -1,5 +1,5 @@
 variable "name_prefix" {
-  description = "Common name for the components, like lynqs-dev"
+  description = "Common name for the components, like your-env-dev"
   type        = string
 }
 
@@ -11,12 +11,12 @@ variable "project_id" {
 variable "psql_instance_name" {
   description = "Psql instance name"
   type        = string
-  default     = "lynqs-psql-dev-253cd1c5"
+  default     = "your_sql_instance_name"
 } 
 
 variable "bucket_region" {
   description = "Region where to create bucket"
-  default     = "europe-west6"
+  default     = "your_region"
   type        = string
 }
 
