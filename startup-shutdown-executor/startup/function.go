@@ -18,6 +18,7 @@ type PubSubMessage struct {
 	Data []byte `json:"data"`
 }
 
+//Changed the default payload to one record to make more easy push messages with the scheduler
 type MessagePayload struct {
 	//Instance string
 	//Project  string
@@ -25,6 +26,7 @@ type MessagePayload struct {
 }
 
 // GOOGLE_CLOUD_PROJECT is a user-set environment variable.
+// Define project and SQL instance as environment variable, to make the function more Independent.
 var projectID = os.Getenv("CLOUD_PROJECT_ID")
 var instanceName = os.Getenv("PSQL_INSTANCE_NAME")
 
